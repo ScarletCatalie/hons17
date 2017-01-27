@@ -11,6 +11,12 @@ public class MenuScript : MonoBehaviour {
 	public void OnStartGame () {
         SceneManager.LoadScene("Int_Station");
 	}
+
+    void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
 	
 
 }
